@@ -46,15 +46,14 @@ class Case3TableViewController: UITableViewController {
     }
     // 어떻게
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell") as! TodoCell
         
-        cell.textLabel?.text = todoList[indexPath.row]
-        cell.textLabel?.font = .systemFont(ofSize: 15)
+        cell.todoLabel.text =  todoList[indexPath.row]
+        cell.todoLabel.font = .systemFont(ofSize: 15)
         
         return cell
     }
-    
-    
+
     
     
 }

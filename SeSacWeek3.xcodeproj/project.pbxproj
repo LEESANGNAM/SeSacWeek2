@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60E8C072A72CAA5009CC296 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C062A72CAA5009CC296 /* TodoCell.swift */; };
 		D681FE492A72001000C1D6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE482A72001000C1D6CB /* AppDelegate.swift */; };
 		D681FE4B2A72001000C1D6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */; };
 		D681FE4D2A72001000C1D6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE4C2A72001000C1D6CB /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60E8C062A72CAA5009CC296 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		D681FE452A72001000C1D6CB /* SeSacWeek3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D681FE482A72001000C1D6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D681FE8E2A72920D00C1D6CB /* Case1TableViewController.swift */,
 				D681FE902A72921500C1D6CB /* Case2TableViewController.swift */,
 				D681FE922A72921A00C1D6CB /* Case3TableViewController.swift */,
+				D60E8C062A72CAA5009CC296 /* TodoCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				D681FE612A72498700C1D6CB /* Extenstion.swift in Sources */,
 				D681FE4D2A72001000C1D6CB /* ViewController.swift in Sources */,
 				D681FE5D2A720FEB00C1D6CB /* TodoTableViewController.swift in Sources */,
+				D60E8C072A72CAA5009CC296 /* TodoCell.swift in Sources */,
 				D681FE8F2A72920D00C1D6CB /* Case1TableViewController.swift in Sources */,
 				D681FE5F2A7232E100C1D6CB /* StudyTableViewController.swift in Sources */,
 				D681FE932A72921A00C1D6CB /* Case3TableViewController.swift in Sources */,

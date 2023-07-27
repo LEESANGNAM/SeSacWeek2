@@ -270,22 +270,55 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="todoCell" textLabel="HbF-sM-jG0" style="IBUITableViewCellStyleDefault" id="pJY-KF-rsv">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="TodoCell" id="pJY-KF-rsv" customClass="TodoCell" customModule="SeSacWeek3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="393" height="35.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJY-KF-rsv" id="40v-nk-vOv">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HbF-sM-jG0">
-                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-i8-vQa">
+                                            <rect key="frame" x="70" y="0.0" width="253" height="35.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saM-3c-O2B">
+                                            <rect key="frame" x="10" y="0.0" width="40" height="35.333333333333336"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="n9g-BQ-Cwh"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system" title=" "/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-bX-zRR">
+                                            <rect key="frame" x="343" y="0.0" width="40" height="35.333333333333336"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="PsY-bi-1eq"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=" "/>
+                                        </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="LrG-bX-zRR" secondAttribute="bottom" id="DI6-WH-XwC"/>
+                                        <constraint firstAttribute="trailing" secondItem="LrG-bX-zRR" secondAttribute="trailing" constant="10" id="L06-b7-b89"/>
+                                        <constraint firstItem="SKX-i8-vQa" firstAttribute="top" secondItem="40v-nk-vOv" secondAttribute="top" id="Q10-0L-EOb"/>
+                                        <constraint firstItem="LrG-bX-zRR" firstAttribute="top" secondItem="40v-nk-vOv" secondAttribute="top" id="Rxu-O3-uby"/>
+                                        <constraint firstItem="LrG-bX-zRR" firstAttribute="leading" secondItem="SKX-i8-vQa" secondAttribute="trailing" constant="20" id="YqI-WT-ifH"/>
+                                        <constraint firstItem="saM-3c-O2B" firstAttribute="top" secondItem="40v-nk-vOv" secondAttribute="top" id="day-bw-gCP"/>
+                                        <constraint firstItem="saM-3c-O2B" firstAttribute="leading" secondItem="40v-nk-vOv" secondAttribute="leading" constant="10" id="fAn-B8-zoy"/>
+                                        <constraint firstItem="SKX-i8-vQa" firstAttribute="leading" secondItem="saM-3c-O2B" secondAttribute="trailing" constant="20" id="gQQ-tf-zcd"/>
+                                        <constraint firstAttribute="bottom" secondItem="saM-3c-O2B" secondAttribute="bottom" id="iEd-kj-cMN"/>
+                                        <constraint firstAttribute="bottom" secondItem="SKX-i8-vQa" secondAttribute="bottom" id="wa1-j7-AZI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="checkButton" destination="saM-3c-O2B" id="tiE-9k-uNS"/>
+                                    <outlet property="starButton" destination="LrG-bX-zRR" id="hPE-F6-pg7"/>
+                                    <outlet property="todoLabel" destination="SKX-i8-vQa" id="AjJ-Yc-LHf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -309,6 +342,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tvG-j3-Jen" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPQ-KI-CGT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -328,10 +362,12 @@
         <image name="2.square.fill" catalog="system" width="128" height="114"/>
         <image name="3.square.fill" catalog="system" width="128" height="114"/>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="moon.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
