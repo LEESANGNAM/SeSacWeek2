@@ -14,6 +14,8 @@
 		D681FE522A72001100C1D6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D681FE512A72001100C1D6CB /* Assets.xcassets */; };
 		D681FE552A72001100C1D6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D681FE532A72001100C1D6CB /* LaunchScreen.storyboard */; };
 		D681FE5D2A720FEB00C1D6CB /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE5C2A720FEB00C1D6CB /* TodoTableViewController.swift */; };
+		D681FE5F2A7232E100C1D6CB /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE5E2A7232E100C1D6CB /* StudyTableViewController.swift */; };
+		D681FE612A72498700C1D6CB /* Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE602A72498700C1D6CB /* Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D681FE542A72001100C1D6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D681FE562A72001100C1D6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D681FE5C2A720FEB00C1D6CB /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		D681FE5E2A7232E100C1D6CB /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
+		D681FE602A72498700C1D6CB /* Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */,
 				D681FE4C2A72001000C1D6CB /* ViewController.swift */,
 				D681FE4E2A72001000C1D6CB /* Main.storyboard */,
+				D681FE602A72498700C1D6CB /* Extenstion.swift */,
+				D681FE5E2A7232E100C1D6CB /* StudyTableViewController.swift */,
 				D681FE512A72001100C1D6CB /* Assets.xcassets */,
 				D681FE532A72001100C1D6CB /* LaunchScreen.storyboard */,
 				D681FE562A72001100C1D6CB /* Info.plist */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D681FE612A72498700C1D6CB /* Extenstion.swift in Sources */,
 				D681FE4D2A72001000C1D6CB /* ViewController.swift in Sources */,
 				D681FE5D2A720FEB00C1D6CB /* TodoTableViewController.swift in Sources */,
+				D681FE5F2A7232E100C1D6CB /* StudyTableViewController.swift in Sources */,
 				D681FE492A72001000C1D6CB /* AppDelegate.swift in Sources */,
 				D681FE4B2A72001000C1D6CB /* SceneDelegate.swift in Sources */,
 			);
