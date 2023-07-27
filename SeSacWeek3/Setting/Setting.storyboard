@@ -290,6 +290,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system" title=" "/>
+                                            <connections>
+                                                <action selector="checkButtonTapped:" destination="sT7-p9-GTb" eventType="touchUpInside" id="NJN-kf-b4v"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-bX-zRR">
                                             <rect key="frame" x="343" y="0.0" width="40" height="35.333333333333336"/>
@@ -298,6 +301,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=" "/>
+                                            <connections>
+                                                <action selector="starButtonTapped:" destination="sT7-p9-GTb" eventType="touchUpInside" id="zVl-Nt-lR2"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
