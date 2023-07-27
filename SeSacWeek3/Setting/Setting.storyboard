@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JTP-bc-3Zl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tvG-j3-Jen">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Case1 Table View Controller-->
+        <!--case1-->
         <scene sceneID="Png-wn-OiW">
             <objects>
                 <tableViewController id="ih0-Jp-T8N" customClass="Case1TableViewController" customModule="SeSacWeek3" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,12 +177,13 @@
                             <outlet property="delegate" destination="ih0-Jp-T8N" id="gk0-BS-FYH"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="case1" image="1.square.fill" catalog="system" id="rW9-Qb-bQN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Vj-2L-4zr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="-18"/>
+            <point key="canvasLocation" x="347.32824427480915" y="-18.30985915492958"/>
         </scene>
-        <!--Case2 Table View Controller-->
+        <!--case2-->
         <scene sceneID="VLi-FV-Mm3">
             <objects>
                 <tableViewController id="JTP-bc-3Zl" customClass="Case2TableViewController" customModule="SeSacWeek3" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,12 +223,13 @@
                             <outlet property="delegate" destination="JTP-bc-3Zl" id="CjD-9l-QKB"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="case2" image="2.square.fill" catalog="system" id="ZJr-ZB-aBK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbS-2H-zUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="-36"/>
+            <point key="canvasLocation" x="1324" y="-18"/>
         </scene>
-        <!--Case3 Table View Controller-->
+        <!--case3-->
         <scene sceneID="6HJ-wM-8Wh">
             <objects>
                 <tableViewController id="sT7-p9-GTb" customClass="Case3TableViewController" customModule="SeSacWeek3" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,13 +237,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="beC-Oe-7he">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADF-Co-tgn">
+                                    <rect key="frame" x="327" y="0.0" width="56" height="44"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" ">
+                                        <imageReference key="image" image="plus.rectangle.fill" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addbuttonTapped:" destination="sT7-p9-GTb" eventType="touchUpInside" id="fWD-xU-eeB"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3VC-R8-ZiD">
+                                    <rect key="frame" x="10" y="0.0" width="307" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ADF-Co-tgn" firstAttribute="leading" secondItem="3VC-R8-ZiD" secondAttribute="trailing" constant="10" id="A6B-vc-KNA"/>
+                                <constraint firstItem="3VC-R8-ZiD" firstAttribute="top" secondItem="beC-Oe-7he" secondAttribute="top" id="IWn-dG-fs0"/>
+                                <constraint firstItem="ADF-Co-tgn" firstAttribute="top" secondItem="beC-Oe-7he" secondAttribute="top" id="JA4-r9-Jkg"/>
+                                <constraint firstAttribute="trailing" secondItem="ADF-Co-tgn" secondAttribute="trailing" constant="10" id="Tg6-fE-pli"/>
+                                <constraint firstAttribute="bottom" secondItem="3VC-R8-ZiD" secondAttribute="bottom" id="duJ-vK-9yG"/>
+                                <constraint firstItem="3VC-R8-ZiD" firstAttribute="leading" secondItem="beC-Oe-7he" secondAttribute="leading" constant="10" id="rGZ-BP-g38"/>
+                                <constraint firstAttribute="bottom" secondItem="ADF-Co-tgn" secondAttribute="bottom" id="tgf-WN-IDR"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pJY-KF-rsv">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="todoCell" textLabel="HbF-sM-jG0" style="IBUITableViewCellStyleDefault" id="pJY-KF-rsv">
+                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJY-KF-rsv" id="40v-nk-vOv">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HbF-sM-jG0">
+                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -249,17 +293,45 @@
                             <outlet property="delegate" destination="sT7-p9-GTb" id="EtK-aN-ec3"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="case3" image="3.square.fill" catalog="system" id="kdU-yN-XjZ"/>
+                    <connections>
+                        <outlet property="addButton" destination="ADF-Co-tgn" id="e0f-us-Fk6"/>
+                        <outlet property="addTextField" destination="3VC-R8-ZiD" id="3k5-Ds-x85"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxp-9h-pDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="-44"/>
+            <point key="canvasLocation" x="2124.4274809160306" y="-44.366197183098592"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vcX-JU-4n1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tvG-j3-Jen" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPQ-KI-CGT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ih0-Jp-T8N" kind="relationship" relationship="viewControllers" id="qLs-ff-674"/>
+                        <segue destination="JTP-bc-3Zl" kind="relationship" relationship="viewControllers" id="cDW-MZ-vD7"/>
+                        <segue destination="sT7-p9-GTb" kind="relationship" relationship="viewControllers" id="Rel-WP-cYQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tl-na-pE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579.38931297709917" y="-18.30985915492958"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1.square.fill" catalog="system" width="128" height="114"/>
+        <image name="2.square.fill" catalog="system" width="128" height="114"/>
+        <image name="3.square.fill" catalog="system" width="128" height="114"/>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="moon.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
