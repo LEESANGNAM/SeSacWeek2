@@ -20,7 +20,7 @@ class StudyTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
+    // 모든 경우의 수를 return 해주어야함
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 0 ? "공부할것": "애플 제품"
     }

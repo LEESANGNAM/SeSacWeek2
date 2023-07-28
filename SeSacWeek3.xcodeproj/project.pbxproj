@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D60E8C072A72CAA5009CC296 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C062A72CAA5009CC296 /* TodoCell.swift */; };
+		D60E8C092A73503D009CC296 /* CutsumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C082A73503D009CC296 /* CutsumTableViewController.swift */; };
+		D60E8C0B2A735288009CC296 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C0A2A735288009CC296 /* CustomTableViewCell.swift */; };
+		D60E8C0D2A7389CA009CC296 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C0C2A7389CA009CC296 /* Todo.swift */; };
+		D60E8C0F2A738A15009CC296 /* TodoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E8C0E2A738A15009CC296 /* TodoInformation.swift */; };
 		D681FE492A72001000C1D6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE482A72001000C1D6CB /* AppDelegate.swift */; };
 		D681FE4B2A72001000C1D6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */; };
 		D681FE4D2A72001000C1D6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681FE4C2A72001000C1D6CB /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		D60E8C062A72CAA5009CC296 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		D60E8C082A73503D009CC296 /* CutsumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsumTableViewController.swift; sourceTree = "<group>"; };
+		D60E8C0A2A735288009CC296 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D60E8C0C2A7389CA009CC296 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		D60E8C0E2A738A15009CC296 /* TodoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInformation.swift; sourceTree = "<group>"; };
 		D681FE452A72001000C1D6CB /* SeSacWeek3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D681FE482A72001000C1D6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +86,15 @@
 				D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */,
 				D681FE4C2A72001000C1D6CB /* ViewController.swift */,
 				D681FE4E2A72001000C1D6CB /* Main.storyboard */,
+				D60E8C082A73503D009CC296 /* CutsumTableViewController.swift */,
+				D60E8C0A2A735288009CC296 /* CustomTableViewCell.swift */,
 				D681FE602A72498700C1D6CB /* Extenstion.swift */,
 				D681FE5E2A7232E100C1D6CB /* StudyTableViewController.swift */,
 				D681FE512A72001100C1D6CB /* Assets.xcassets */,
 				D681FE532A72001100C1D6CB /* LaunchScreen.storyboard */,
 				D681FE562A72001100C1D6CB /* Info.plist */,
+				D60E8C0C2A7389CA009CC296 /* Todo.swift */,
+				D60E8C0E2A738A15009CC296 /* TodoInformation.swift */,
 			);
 			path = SeSacWeek3;
 			sourceTree = "<group>";
@@ -175,11 +187,15 @@
 				D681FE4D2A72001000C1D6CB /* ViewController.swift in Sources */,
 				D681FE5D2A720FEB00C1D6CB /* TodoTableViewController.swift in Sources */,
 				D60E8C072A72CAA5009CC296 /* TodoCell.swift in Sources */,
+				D60E8C0F2A738A15009CC296 /* TodoInformation.swift in Sources */,
 				D681FE8F2A72920D00C1D6CB /* Case1TableViewController.swift in Sources */,
 				D681FE5F2A7232E100C1D6CB /* StudyTableViewController.swift in Sources */,
+				D60E8C0B2A735288009CC296 /* CustomTableViewCell.swift in Sources */,
 				D681FE932A72921A00C1D6CB /* Case3TableViewController.swift in Sources */,
+				D60E8C092A73503D009CC296 /* CutsumTableViewController.swift in Sources */,
 				D681FE492A72001000C1D6CB /* AppDelegate.swift in Sources */,
 				D681FE912A72921500C1D6CB /* Case2TableViewController.swift in Sources */,
+				D60E8C0D2A7389CA009CC296 /* Todo.swift in Sources */,
 				D681FE4B2A72001000C1D6CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

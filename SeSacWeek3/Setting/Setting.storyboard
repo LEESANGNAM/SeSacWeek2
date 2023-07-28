@@ -233,7 +233,7 @@
         <scene sceneID="6HJ-wM-8Wh">
             <objects>
                 <tableViewController id="sT7-p9-GTb" customClass="Case3TableViewController" customModule="SeSacWeek3" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qbk-1M-IQW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qbk-1M-IQW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -271,20 +271,20 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="TodoCell" id="pJY-KF-rsv" customClass="TodoCell" customModule="SeSacWeek3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="94" width="393" height="35.333332061767578"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="34.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJY-KF-rsv" id="40v-nk-vOv">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35.333332061767578"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="34.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-i8-vQa">
-                                            <rect key="frame" x="70" y="0.0" width="253" height="35.333333333333336"/>
+                                            <rect key="frame" x="70" y="0.0" width="253" height="34.666666666666664"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saM-3c-O2B">
-                                            <rect key="frame" x="10" y="0.0" width="40" height="35.333333333333336"/>
+                                            <rect key="frame" x="10" y="0.0" width="40" height="34.666666666666664"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="n9g-BQ-Cwh"/>
                                             </constraints>
@@ -295,7 +295,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-bX-zRR">
-                                            <rect key="frame" x="343" y="0.0" width="40" height="35.333333333333336"/>
+                                            <rect key="frame" x="343" y="0.0" width="40" height="34.666666666666664"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="PsY-bi-1eq"/>
                                             </constraints>
