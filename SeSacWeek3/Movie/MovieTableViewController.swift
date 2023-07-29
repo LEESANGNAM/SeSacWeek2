@@ -21,15 +21,9 @@ class MovieTableViewController: UITableViewController {
         return movies.movie.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifire) as! MovieTableViewCell
         var movieInfo = movies.movie[indexPath.row]
-        cell.movieTitleLabel.text = movieInfo.title
-        cell.movieDateLabel.text = movieInfo.releaseDate
-        cell.movieTimeLabel.text = "\(movieInfo.runtime)분"
-        cell.movieRateLabel.text = "\(movieInfo.rate)점"
-        cell.movieOverviewLabel.text = movieInfo.overview
         
-        cell.moviePoster.image = UIImage(named: "\(movieInfo.title)")
         
         return cell
     }
