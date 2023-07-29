@@ -41,6 +41,17 @@ class CustomTableViewCell: UITableViewCell {
         }
     }
     
+    func tapCheckButton(todo: ToDo){
+        if todo.done {
+            checkImageView.image = UIImage(systemName: "checkmark.square.fill")
+        }else{
+            checkImageView.image = UIImage(systemName: "checkmark.square")
+        }
+        
+        todo.done.toggle()
+        
+    }
+    
     
     
 }

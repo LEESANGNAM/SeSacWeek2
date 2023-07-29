@@ -22,8 +22,7 @@ class MovieTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifire) as! MovieTableViewCell
-        var movieInfo = movies.movie[indexPath.row]
-        
+        cell.configureCell(movieInfo: movies.movie[indexPath.row])
         
         return cell
     }

@@ -13,7 +13,7 @@ import UIKit
 class CutsumTableViewController: UITableViewController {
     
     
-    let todo = ToDoInformation()
+    var todo = ToDoInformation()
     
     
     override func viewDidLoad() {
@@ -41,7 +41,11 @@ class CutsumTableViewController: UITableViewController {
     }
     //3. 셀클릭 이벤트
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier) as! CustomTableViewCell
+        print("바뀌기전 값 : ",todo.list[indexPath.row].done)
+        cell.tapCheckButton(todo: todo.list[indexPath.row])
+        tableView.reloadData()
+        print("바뀐 후 값 : ",todo.list[indexPath.row].done)
     }
     
     
