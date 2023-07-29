@@ -65,7 +65,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-JK-F0d">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-JK-F0d">
                                                             <rect key="frame" x="0.0" y="80.333333333333329" width="231.33333333333334" height="148.66666666666669"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -95,6 +95,14 @@
                                         <constraint firstAttribute="trailing" secondItem="Fpv-YP-JQq" secondAttribute="trailing" constant="10" id="gfz-YP-LpQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieDateLabel" destination="EGE-Ur-c1U" id="3ah-Bs-bfo"/>
+                                    <outlet property="movieOverviewLabel" destination="x8f-JK-F0d" id="UKP-KF-abf"/>
+                                    <outlet property="moviePoster" destination="9uv-X4-2kR" id="krz-oW-pq7"/>
+                                    <outlet property="movieRateLabel" destination="1kh-Qa-YjT" id="WMS-mx-9Ih"/>
+                                    <outlet property="movieTimeLabel" destination="Jjk-uD-bzR" id="cir-AW-YF7"/>
+                                    <outlet property="movieTitleLabel" destination="aia-bd-Xyf" id="GTu-gX-xpi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
