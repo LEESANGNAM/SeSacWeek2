@@ -102,6 +102,7 @@
 		D681FE472A72001000C1D6CB /* SeSacWeek3 */ = {
 			isa = PBXGroup;
 			children = (
+				D698B5F22A78A6DF00ED3D28 /* Todocustum */,
 				D60E8C102A74BB9C009CC296 /* Movie */,
 				D681FE8B2A7291EB00C1D6CB /* Setting */,
 				D681FE5C2A720FEB00C1D6CB /* TodoTableViewController.swift */,
@@ -109,15 +110,11 @@
 				D681FE4A2A72001000C1D6CB /* SceneDelegate.swift */,
 				D681FE4C2A72001000C1D6CB /* ViewController.swift */,
 				D681FE4E2A72001000C1D6CB /* Main.storyboard */,
-				D60E8C082A73503D009CC296 /* CutsumTableViewController.swift */,
-				D60E8C0A2A735288009CC296 /* CustomTableViewCell.swift */,
 				D681FE602A72498700C1D6CB /* Extenstion.swift */,
 				D681FE5E2A7232E100C1D6CB /* StudyTableViewController.swift */,
 				D681FE512A72001100C1D6CB /* Assets.xcassets */,
 				D681FE532A72001100C1D6CB /* LaunchScreen.storyboard */,
 				D681FE562A72001100C1D6CB /* Info.plist */,
-				D60E8C0C2A7389CA009CC296 /* Todo.swift */,
-				D60E8C0E2A738A15009CC296 /* TodoInformation.swift */,
 			);
 			path = SeSacWeek3;
 			sourceTree = "<group>";
@@ -132,6 +129,17 @@
 				D60E8C062A72CAA5009CC296 /* TodoCell.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		D698B5F22A78A6DF00ED3D28 /* Todocustum */ = {
+			isa = PBXGroup;
+			children = (
+				D60E8C0C2A7389CA009CC296 /* Todo.swift */,
+				D60E8C0E2A738A15009CC296 /* TodoInformation.swift */,
+				D60E8C082A73503D009CC296 /* CutsumTableViewController.swift */,
+				D60E8C0A2A735288009CC296 /* CustomTableViewCell.swift */,
+			);
+			path = Todocustum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
